@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+:root
+{
+    --sce-color: #1ABC9C ;
+    --main-color: #2C3E50 ;
+    --thr-color: #1A252F ;
+
+}
+
+.bg-main
+{
+    background-color: var(--main-color);
+}
+.text-main
+{
+    color: var(--main-color);
+}
+
+.bg-thr
+{
+    background-color: var(--thr-color);
+}
+.bg-sce
+{
+    background-color: var(--sce-color);
+}
+.text-sce
+{
+    color: var(--sce-color);
+
+}
+
+.btn-main
+{
+    background-color: var(--sce-color);
+    padding: 10px 25px;
+    color: white;
+    outline: unset;
+    border: none;
+    border-radius: 10px;
+
+}
+a,a:active
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+.pt-105
+{
+    padding-top: 105px;
+}
+
+.vh-90
+{
+    height: 90vh;
+
+}
+
+.cr
+{
+    cursor: pointer;
+}

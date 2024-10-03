@@ -1,0 +1,41 @@
+<section class=" d-flex flex-column  justify-content-center align-items-center py-5">
+ <app-star [titelStar]="titelhome" [coustomColor]="clolorHome"></app-star>
+
+
+ <div class="container">
+    <div class="row g-3 ">
+        @for (scr of PortfolioScr; track $index) {
+            <div class="col-lg-4 col-md-6">
+                <figure class="position-relative overflow-hidden ">
+                    
+                    <img [src]="scr" alt="" class="w-100 rounded-3">
+                    
+                    <figcaption
+                    (click)="flag = false; modelSrc = scr "
+                     class="position-absolute bg-sce rounded-3 start-0 top-0 d-flex justify-content-center align-items-center w-100 h-100">
+                        <i class="fa-solid fa-plus fa-6x text-white"></i>
+                    </figcaption>
+    
+                </figure>
+                
+            </div> 
+
+        }
+
+
+
+    </div>
+ </div>
+
+
+
+
+
+</section>
+
+<div
+(click)="(hideWindow($event.target, img ))"
+[class.d-none]="flag"
+ class="model position-fixed start-0 top-0 h-100 w-100 d-flex justify-content-center align-items-center bg-primary bg-opacity-25">
+    <img #img [src]="modelSrc" alt="" width="650" class="rounded-3 ">
+</div>

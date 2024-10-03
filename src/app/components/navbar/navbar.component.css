@@ -1,0 +1,10 @@
+nav
+{
+    transition: all 0.4s;
+}
+.active-link {
+    background-color: var(--sce-color) !important;
+    
+    border-radius: 5px;
+  }
+  
